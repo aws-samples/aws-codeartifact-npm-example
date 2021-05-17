@@ -4,7 +4,7 @@
   "description": "A sample application consuming a private scoped npm package",
   "main": "index.js",
   "scripts": {
-    "prepare": "npm run co:login",
+    "preinstall": "npm run co:login",
     "co:login": "aws codeartifact login --tool npm --repository my-repo --domain my-domain"
   },
   "dependencies": {
